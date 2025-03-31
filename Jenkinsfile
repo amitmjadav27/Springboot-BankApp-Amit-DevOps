@@ -1,12 +1,12 @@
 @Library('Shared')_
 
 pipeline{
-    agent {label 'dev-server'}
+    agent {label 'jenkins-agent'}
     
     stages{
         stage("Code"){
             steps{
-                clone("https://github.com/Amitabh-DevOps/banking-app-project.git","dev")
+                clone("https://github.com/amitmjadav27/Springboot-BankApp-Amit-DevOps.git","dev")
                 echo "Code clonning done."
             }
         }
